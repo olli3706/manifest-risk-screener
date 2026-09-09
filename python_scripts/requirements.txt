@@ -1,0 +1,10 @@
+python-docx
+openpyxl
+reportlab
+python-dotenv
+pydantic>=2.0
+click
+pytest
+ruff
+pyyaml
+anthropic>=0.40

@@ -1,0 +1,25 @@
+[project]
+name = "manifest-risk-screener"
+version = "0.1.0"
+description = "Shipment-manifest risk screener (anomaly + shell-company detection)"
+requires-python = ">=3.11"
+dependencies = [
+    "python-docx",
+    "openpyxl",
+    "reportlab",
+    "python-dotenv",
+    "pydantic>=2.0",
+    "click",
+    "pyyaml",
+    "anthropic>=0.40",
+]
+
+[project.scripts]
+manifest-screener = "main:cli"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
